@@ -22,7 +22,8 @@ void UPositionReporter::BeginPlay()
 	Super::BeginPlay();
 
 	FString ObjectName = GetOwner()->GetName();
-	UE_LOG(LogTemp, Warning, TEXT("lololol kill them all I'm a %s"), *ObjectName);
+	FString ObjectPos = GetOwner()->GetTransform().GetLocation().ToString();
+	UE_LOG(LogTemp, Warning, TEXT("lololol kill them all I'm a %s hiding at %s"), *ObjectName, *ObjectPos);
 	
 }
 
