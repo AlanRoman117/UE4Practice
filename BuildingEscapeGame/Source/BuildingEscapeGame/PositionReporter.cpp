@@ -21,7 +21,8 @@ void UPositionReporter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp, Warning, TEXT("lololol kill them all I'm a Chair LMAO"));
+	FString ObjectName = GetOwner()->GetName();
+	UE_LOG(LogTemp, Warning, TEXT("lololol kill them all I'm a %s"), *ObjectName);
 	
 }
 
