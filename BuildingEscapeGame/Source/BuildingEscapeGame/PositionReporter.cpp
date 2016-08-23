@@ -12,7 +12,7 @@ UPositionReporter::UPositionReporter()
 	bWantsBeginPlay = true;
 	PrimaryComponentTick.bCanEverTick = true;
 
-	// ...
+	
 }
 
 
@@ -21,7 +21,7 @@ void UPositionReporter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	UE_LOG(LogTemp, Warning, TEXT("lololol kill them all I'm a Chair LMAO"));
 	
 }
 
